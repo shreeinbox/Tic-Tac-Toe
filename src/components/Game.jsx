@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Game = () => {
     const arrXorO = ['X','O','X','O','X','O','X','O', 'X', 'O']
@@ -92,10 +93,15 @@ const Game = () => {
     })
 
   return (
-    <div>
+    <div className="container mx-auto h-screen p-4 bg-yellow-100 text-center rounded-lg shadow-md">
+        <section className="float-right mr-5">
+            <Link to='..' className="text-yellow-800 hover:underline">Back to Home Page</Link>
+        </section>
+
         <section className="container text-yellow-100 mt-10 mx-auto border-4 border-black p-2
                             bg-yellow-800 w-1/4 h-auto rounded-lg">{isGameWon? 'Tic Tac Toe' :  isGameOver? 'Game Over - its a draw': 'Game Starts'}
         </section>
+        
         <section className="container mt-3 mx-auto my-auto w-1/4 aspect-square
                             border-4 border-black-800 p-2
                             bg-gray-800 rounded-lg 
