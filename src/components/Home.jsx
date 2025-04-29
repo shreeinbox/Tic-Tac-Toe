@@ -1,12 +1,13 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import logo from '../assets/images/logo.png'
 
 const Home = () => {
     
 
     return (
         <div className="container mx-auto h-screen p-4 bg-yellow-100 text-center rounded-lg shadow-md">
-            <img className="mx-auto mt-10 mb-10 w-30 h-30 bg-blue-100 p-3 shadow-[-4px_4px_0_rgba(0,0,0,0.2)]" src="./src/assets/images/logo.png" alt="an image of tictactoe" />
+            <img className="mx-auto mt-10 mb-10 w-30 h-30 bg-blue-100 p-3 shadow-[-4px_4px_0_rgba(0,0,0,0.2)]" src={logo} alt="an image of tictactoe" />
             <header className="text-4xl font-bold text-yellow-500 font-bold mb-4">
                 <h1 className="first-letter:text-6xl first-letter:text-blue-300">
                     Tic <span className="inline-block first-letter:text-6xl first-letter:text-blue-300">Tac</span>
